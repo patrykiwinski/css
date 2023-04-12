@@ -1,0 +1,39 @@
+﻿<html>
+<head>
+<title>styl zewnetrzny</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+</head>
+<body bgcolor="silver">
+<h1>1. Na co pozwala styl lokalny, który element będzie formatowany z użyciem stylu lokalnego,</h1><br>
+<selektor style="nasze style">
+<h3>Styl lokalny pozwala na nadanie formatowania konkretnemu pojedynczemu elementowi strony. Jest wstawiany w tej samej linii, w której znajduje się element formatowany. O tym, który to będzie element, decyduje słowo kluczowe "selektor".</h3><br>
+</selektor>
+<h1>2. Składnia teoretyczna ( z użyciem ramki otaczającej może być tabela o jednej komórce, zastosuj „znaki specjalne” do napisania definicji stylu lokalnego tak aby instrukcja CSS nie wykonywała się a tylko wyświetlała wewnątrz ramki [&nbsp; spacja niełamana] przykład „znaku specjalnego”),</h1><br>
+<h3>
+
+<textarea rows="4" cols="50">
+<selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+
+</textarea>
+<textarea rows="4" cols="50">
+<selektor style="nasze style"></selektor>
+
+</textarea>
+</h3><br>
+<h1>3. Co może być selektorem,</h1><br>
+
+<selektor style="font-family:"Arial">
+<h3><odp>Selektorem może być praktycznie dowolny znacznik, np. p (akapit), h1 (nagłówek), td (komórka tabeli) i inne. To właśnie elementom znajdującym się pomiędzy tymi znacznikami, nadajemy atrybuty formatowania.</odp></h3><br>
+<h1>4. Co wipisujemy jako "cechę". Jakie jest znaczenie średników,</h1>
+</selektor>
+<selektor style="font-family:"Arial">
+<h3>Jako "cecha" czy inaczej własność bądź właściwość (ang. "property") należy wpisać o jakie konkretnie atrybuty formatowania nam chodzi (np. kolor tekstu - color). Jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy rozdzielone średnikami.</h3><br>
+</selektor>
+<h1>5. Co wipisujemy jako "wartość" (w deklaracji stylu).</h1><br>
+
+<selektor style="font-family:"Arial">
+<h3>Jako wyraz "wartość" (w deklaracji stylu) wpisujemy dokładną wartość atrybutu (np. dla koloru tekstu będzie to: red, blue czy też #31F4A5 itd.). Wartość zależy ściśle od cechy, po której stoi w deklaracji.</h3><br>
+</selektor>
+ </body>
+</html>
