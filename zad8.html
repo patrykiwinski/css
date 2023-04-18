@@ -10,12 +10,18 @@
 		}
 		p {
 			color: red;
+			font-size: 27px;
 			text-align: center;
 		}
 		li {
 			margin: 10px;
 			padding: 5px;
 			background-color: #ccc;
+		}
+		jd {
+			font-size: 20px;
+			color: red;
+			background-color: green;
 		}
 	</style>
 </head>
@@ -24,9 +30,38 @@
 	<h1>Jaki jest cel wewnętrznego arkusza stylów?</h1>
 	<p>Celem wewnętrznego arkusza stylów jest umożliwienie definiowania stylów bezpośrednio w dokumencie HTML.</p>
 	<ol type="1">
-		<li>Możliwość definiowania stylów bezpośrednio w dokumencie HTML</li>
-		<li>Zwiększenie czytelności kodu HTML</li>
-		<li>Łatwiejsze utrzymanie i modyfikowanie stylów</li>
+		<li>Gdzie jest wstawiany wewnętrzny arkusz stylów?
+Wewnętrzny arkusz stylów jest wstawiany bezpośrednio w sekcji head dokumentu HTML.</li>
+		
+		<li>Jaka jest składnia teoretyczna wewnętrznego arkusza stylów?
+Składnia teoretyczna wewnętrznego arkusza stylów to:<br>
+		<textarea id="w3review" name="w3review" rows="4" cols="50">
+<style type="text/css">
+    /* Reguły CSS */
+</style>
+
+</textarea>
+		</li>
+		<li>Jakie mogą być selektory?
+Selektory wewnętrznego arkusza stylów mogą być dowolne i wybierają elementy HTML do których będą stosowane style CSS. Można używać selektorów elementów, selektorów klas, selektorów ID, selektorów atrybutów i wiele innych.
+
+</li>
+		<li>Jakie mogą być cechy i wartości?
+Wewnętrzny arkusz stylów umożliwia definiowanie różnych cech i wartości dla elementów HTML, takich jak:<br>
+<jd>
+kolor tła (background-color)<br>
+kolor tekstu (color)<br>
+marginesy (margin)<br>
+wypełnienie (padding)<br>
+obramowanie (border)<br>
+czcionka (font-family)<br>
+wielkość czcionki (font-size)<br>
+styl czcionki (font-style)<br>
+pogrubienie czcionki (font-weight)<br>
+tekst pionowy (text-align)<br>
+wiele innych cech i wartości.</li>
+</jd>
+		
 	</ol>
 </body>
 </html>
