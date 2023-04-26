@@ -1,0 +1,94 @@
+﻿
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
+</head>
+<body bgcolor=grey>
+  
+  <h1><font color="green" face="New Roman">Opis stylu zewnętrznego.</font></h1>
+  <OL TYPE=upper-roman START=1>
+<LI>Składnia teoretyczna → otoczony ramką (może być tabela jedno komórkowa, konieczne wcięcia)., 
+  </OL>
+   <UL TYPE=circle>
+<LI> Składnia teoretyczna
+
+<br>
+<textarea  rows="4" cols="50">&lt;style type="text/css"&gt;
+(...)
+(link rel="Stylesheet" type="text/css" href="style.css" /)
+(...)
+(/head)
+ </textarea>
+
+
+  
+  <br>
+  </UL>
+      <OL TYPE=upper-roman START=2>
+<LI>Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz ile razy może on występować w dokumencie, jako podłączenie stylu CSS?
+    </OL>
+   <UL TYPE=Disc>
+<LI>
+Wstawienie →wystarczy wpisać w treści nagłówkowej każdego z dokumentów (pomiędzy znacznikami <head> a </head>), przedstawioną powyżej linijkę:
+  </UL>
+      <OL TYPE=upper-roman START=3>
+<LI>Jak jest najprostsza forma wstawiania stylu zewnętrznego → otoczony ramką (może być tabela jedno komórkowa?
+    </OL>
+   <UL TYPE=circle>
+<LI> 
+Składnia teoretyczna<br>
+<textarea  rows="4" cols="50">
+  (link rel="Stylesheet" type="text/css" href="style.css" /)
+  </textarea>
+ 
+
+ 
+  <br>
+  </UL>
+      <OL TYPE=upper-roman START=4>
+<LI>Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad musi być zachowana przy większej ilości dołączanych styli?
+      </UL>
+   <UL TYPE=circle>
+<LI> można dołączyć dowolną liczbę zewnętrznych arkuszy stylów - każdy jako osobny element (link rel="Stylesheet" /).
+</OL>
+      <OL TYPE=upper-roman START=5>
+<LI>Co się dzieje w przypadku konfliktów? Przez konflikt rozumiemy, gdy te same style są definiowane w różnych arkuszach styli podłączone do tego samego arkusza.
+  </OL>
+   <UL TYPE=circle>
+<LI>W przypadku konfliktów, ważniejsze będą deklaracje z arkusza dołączonego później.
+  </UL>
+      <OL TYPE=upper-roman START=6>
+<LI>Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?
+  </OL>
+   <UL TYPE=circle>
+<LI> Zewnętrzny arkusz stylów jest on zwykłym plikiem tekstowym. Do tworzenia i edytowania wystarczy zwykły edytor tekst.
+  </UL>
+      <OL TYPE=upper-roman START=7>
+<LI>Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?
+  </OL>
+   <UL TYPE=circle>
+<LI>Zewnętrzny arkusz stylów jest on zwykłym plikiem tekstowym. Do tworzenia i edytowania wystarczy zwykły edytor tekst.
+  </UL>
+      <OL TYPE=upper-roman START=8>
+<LI>Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli?
+  </OL>
+   <UL TYPE=circle>
+<LI> Należy jedynie pamiętać, że plik będący zewnętrznym arkuszem stylów musi mieć rozszerzenie *.css
+  </UL>
+      <OL TYPE=upper-roman START=9>
+<LI>Jakie są zalety zewnętrznego arkusza styli( dwie – z użyciem wyliczenia?
+  </OL>
+   <UL TYPE=circle>
+<LI>Zalety zewnętrznego arkusza styli:
+wszystkie nasze strony w obrębie całego serwisu mogą mieć pewne wspólne cechy.<br>
+2) jeśli w ostatniej chwili zdecydujemy się zmienić np. rodzaj czcionki na wszystkich stronach, możemy to zrobić, modyfikując jedynie zewnętrzny arkusz stylów, bez konieczności zmiany każdej strony osobno.
+  </UL>
+      <OL TYPE=upper-roman START=10>
+<LI>Uwagi na temat pisania w CSS. 
+  </OL>
+   <UL TYPE=circle>
+<LI> Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami <head> a </head>). Można go zastosować, gdy elementy które pragniemy poddać formatowaniu, występują wielokrotnie na stronie i wszystkim chcemy nadać takie same atrybuty (inne niż domyślne).
+  </UL>
+
+</body>
+</html>
