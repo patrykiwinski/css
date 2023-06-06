@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>zadanie 34-nazwisko_ucznia</title>
+  <meta charset="utf-8" />
+  <style type="text/css">
+    body {
+      background-color: rgb(100,200,150);
+      text-align: center;
+      margin: 50px;
+	  
+    }
+    div {
+      background: rgb(100,128,255);
+      width: 400px;
+      border: 3px black solid;
+	  margin: 0 auto; 
+      
+    }
+    h1 {
+      margin: 20px;
+      border: 1px dashed ;
+	   border-color: red blue yellow green;
+      background: rgb(255,255,0);
+    }
+	    h2 {
+      margin: 5px;
+      border: 4px ridge; 
+	  border-color: purple yellow green black;;
+      background: rgb(0,255,255);
+    }
+	    h3 {
+      margin: 30px;
+      border: 10px double black;
+      background: rgb(255,0,255);
+    }
+	 </style>
+</head>
+<body>
+  <div>
+    <h1>Iwinski <br> 2g1</h1>
+  </div>
+  <hr>
+  <div>
+  <h2>wykonane samemu</h2>
+  </div>
+   <hr>
+  <div>
+  <h3>wykonane tez samemu</h3>
+  </div>
+</body>
+</html>
+<!-- Iwinski patryk -->
