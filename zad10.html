@@ -1,0 +1,76 @@
+﻿<html>
+<head>
+<style>
+  h1 {
+    font-weight: bold;
+  }
+  p {
+    text-indent: 20px;
+  }
+</style>
+</head>
+<body>
+<h1>1. Wymień oraz opisz dwie części selektora.</h1>
+<p>
+Selektor w CSS składa się z dwóch głównych części:<br>
+<br>
+a) <strong>Element docelowy:</strong> Określa typ elementu HTML, na którym chcemy zastosować styl. Może to być tag HTML, klasa, identyfikator lub nawet pseudoelement. Na przykład, jeśli chcemy stylizować wszystkie nagłówki pierwszego poziomu &lt;h1&gt;, elementem docelowym będzie <strong>h1</strong>.<br>
+<br>
+b) <strong>Deklaracje stylów:</strong> Są to właściwości CSS, które chcemy zastosować do wybranych elementów docelowych. Mogą to być np. kolor tła, rozmiar czcionki, marginesy itp. Na przykład, jeśli chcemy ustawić czerwony kolor tekstu dla nagłówków pierwszego poziomu, deklaracją stylu może być <strong>color: red</strong>.<br>
+</p>
+<h1>2. Znaczenie nawiasów klamrowych {...}</h1>
+<p>
+Nawiasy klamrowe {} w CSS są używane do grupowania deklaracji stylów i tworzenia bloków kodu. W kontekście selektora, nawiasy klamrowe otaczają deklaracje stylów i definiują zakres ich działania dla wybranego elementu docelowego. Wszystkie deklaracje stylów znajdujące się wewnątrz nawiasów klamrowych będą miały zastosowanie do wybranych elementów.<br>
+<br>
+Przykład:<br>
+```css<br>
+h1 {<br>
+  color: red;<br>
+  font-size: 24px;<br>
+}<br>
+```<br>
+<br>
+W powyższym przykładzie nawiasy klamrowe {} grupują deklaracje color: red; i font-size: 24px; jako część selektora h1. Oznacza to, że wszystkie nagłówki pierwszego poziomu (&lt;h1&gt;) na stronie będą miały czerwony kolor tekstu oraz rozmiar czcionki 24 piksele.<br>
+</p>
+<h1>3. Opisz cechy selektorów</h1>
+<p>
+Selektory w CSS mają różne cechy, które decydują o sposobie, w jaki elementy są wybierane i stylizowane. Oto niektóre z podstawowych cech selektorów:<br>
+<br>
+- <strong>Specyficzność:</strong> Określa, jak dokładnie i precyzyjnie selektor wybiera elementy docelowe. Selektory o wyższej specyficzności mają większy priorytet w zastosowaniu stylów. Na przykład, selektor zawierający klasę (.) ma większą specyficzność niż selektor tagu (<strong>div</strong>).<br>
+<br>
+- <strong>Dziedziczenie:</strong> Niektóre style mogą być dziedziczone przez elementy potomne. Oznacza to, że jeśli nadamy styl pewnemu elementowi, jego elementy potomne dziedziczą ten styl, chyba że zostanie nadpisany innym stylem.<br>
+<br>
+- <strong>Kaskadowość:</strong> CSS używa zasady kaskadowości, która określa, jakie style zostaną zastosowane do elementów, gdy istnieje kilka reguł dotyczących tego samego elementu. Style zdefiniowane wewnętrzniej (np. w arkuszu stylów) mają większy priorytet niż style zdefiniowane zewnętrznie (np. w pliku CSS zewnętrznym).<br>
+<br>
+- <strong>Możliwość zagnieżdżania:</strong> CSS umożliwia zagnieżdżanie selektorów, co oznacza, że można określać style dla elementów znajdujących się wewnątrz innych elementów. Na przykład, możemy zastosować styl tylko do linków znajdujących się wewnątrz pewnego kontenera.<br>
+</p>
+<h1>4. Opisz wartości selektorów</h1>
+<p>
+Selektory w CSS mają różne wartości, które określają, jakie elementy zostaną wybrane i stylizowane. Oto trzy podstawowe wartości selektorów:<br>
+<br>
+1. <strong>Tag HTML:</strong> Selektor tagu jest najprostszym rodzajem selektora i odnosi się do wszystkich elementów o określonym tagu HTML. Na przykład, selektor <strong>div</strong> odnosi się do wszystkich elementów &lt;div&gt;.<br>
+<br>
+2. <strong>Klasa:</strong> Selektor klasy jest poprzedzony kropką (np. <strong>.klasa</strong>) i odnosi się do elementów, które mają określoną klasę. Można nadawać jednej lub wielu elementom tę samą klasę, aby zastosować do nich wspólne style.<br>
+<br>
+3. <strong>Identyfikator:</strong> Selektor identyfikatora jest poprzedzony znakiem hash (np. <strong>#identyfikator</strong>) i odnosi się do elementu, który ma określony identyfikator. Każdy identyfikator powinien być unikalny na stronie, ponieważ może być stosowany tylko do jednego elementu.<br>
+</p>
+<h1>5. Kiedy stosujemy znak średnika (;), kiedy nie jest konieczny</h1>
+<p>
+W CSS znak średnika (;) jest używany do oddzielenia kolejnych deklaracji stylów w bloku deklaracji. Stosujemy go po każdej deklaracji stylu, aby wskazać, że jedna deklaracja się kończy i kolejna się zaczyna.<br>
+<br>
+Przykład zastosowania znaku średnika (;):<br>
+```css<br>
+h1 {<br>
+  color: red;<br>
+  font-size: 24px;<br>
+}<br>
+```<br>
+<br>
+W powyższym przykładzie każda deklaracja (color: red; i font-size: 24px;) jest zakończona znakiem średnika (;), aby oddzielić je od siebie.<br>
+<br>
+Niektóre przypadki, kiedy znak średnika (;) nie jest konieczny:<br>
+- Jeśli w bloku deklaracji jest tylko jedna deklaracja stylu, to znak średnika (;) nie jest wymagany.<br>
+- Jeśli ostatnia deklaracja w bloku deklaracji ma znak } (zamykający nawias klamrowy), to znak średnika (;) po niej nie jest konieczny.<br>
+</p>
+</body>
+</html>
